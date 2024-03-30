@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Dancing+Script:wght@700&family=Edu+NSW+ACT+Foundation&family=Kay+Pho+Du&family=Libre+Baskerville:ital@1&family=Noto+Sans+JP:wght@300&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles/4th.css">
+</head>
+<body>
+    <img class="rightImg" src="../static/images/pngtree-green-flower-vine-plant-illustration-png-image_4590341-removebg-preview.png" alt="">
+    <div class="title mt-4">
+        <h1 class="titleText">
+            AyurDost
+        </h1>
+        <img src="../static/images/giphy.gif" class="rightGif" alt="">
+    </div>
+    <div class="content pt-5 mt-4">
+        <div class="mx-4 gridItems left">
+            <h2 style="align-self: center; font-size: 1.5rem; font-weight: bolder;" class="titleText mt-3">Home</h2>
+            <ul class="mt-4">
+                <li>About</li>
+                <li>Select</li>
+                <li>Symptoms</li>
+                <li>Treatment</li>
+            </ul>
+        </div>
+        <div class="gridItems right">
+            
+            <div class="mid">
+                <div class="select  box1" id="symptomsContainer">
+                    <p class="titleText px-3" style="font-size: 1.5rem">Entered Symptoms</p>
+                <!-- Symptoms will be displayed here -->
+                </div>
+                <div class="box3 ">
+                    <p style="font-size: 1.2rem;" class="titleText px-3">Disease</p>
+                    {{nameDisease}}
+                </div>
+                <div class="box5">
+                    <p style="font-size: 1.2rem;" class="titleText px-3">Therapy</p>
+                    {{therapy}}
+                </div>
+                <div class="box6">
+                    <p style="font-size: 1.2rem; " class="titleText px-3">Precautions</p>
+                    {{precautions}}
+
+                </div>
+                
+                <div class="box2">
+                    <p style="font-size: 1.2rem;" class="titleText px-3">Ayurvedic Formulations</p>
+                    {{Ayurved}}
+                </div >
+                <div class="box4">
+                    <p style="font-size: 1.2rem; " class="titleText px-3">Description</p>
+                    {{descrip}}
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <a href="{{ url_for('sympto')}}"><button type="button" class="btn btn-success butL mt-3">Previous</button></a>
+    
+    
+    <script src="../static/js/4th.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1;
+
+}
+.titleText{
+    align-self: center;
+    justify-self: center;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(57, 169, 34);
+    font-size: 2.5rem;
+}
+.leftGif{
+    height: 5rem;
+    rotate: 0deg;
+    
+}
+.rightGif{
+    height: 3.5rem;
+    rotate: 90deg;
+}
+body{
+    background-image: url("../images/5660740.jpg");
+    background-position-y: -700px;
+}
+.rightImg{
+    position: absolute;
+    right: 0vh;
+    height: 35rem;
+
+}
+.content{
+    display: grid;
+    grid-template-columns: 0.6fr 2fr 0.3fr;
+    /* column-gap: 30px; */
+
+
+}
+.left{
+    background-color: rgb(231, 246, 229);
+    height: 70vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction:column;
+    
+
+}
+.right{
+    background-color: rgb(231, 246, 229);
+    height: 70vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction:column;
+    
+}
+.gridItems{
+    grid-row: 1;
+}
+.butL{
+    position: relative;
+    right: -160vh;
+    
+}
+.but{
+    position: relative;
+    right: -160vh;
+}
+.select{
+    display: grid;
+    
+}
+.items{
+    grid-column: 1;
+}
+.formText{
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(57, 169, 34);
+    display: inline-flex;
+    font-weight:bold
+}
+button{
+    
+}
+#True{
+    justify-self: center;
+}
+#False{
+    justify-items: center;
+}
+li {
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(34, 106, 19);
+}

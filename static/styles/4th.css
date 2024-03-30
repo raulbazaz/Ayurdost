@@ -1,0 +1,137 @@
+.title{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 1;
+
+}
+.titleText{
+    align-self: center;
+    justify-self: center;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(57, 169, 34);
+    font-size: 2.5rem;
+}
+.leftGif{
+    height: 5rem;
+    rotate: 0deg;
+    
+}
+.rightGif{
+    height: 3.5rem;
+    rotate: 90deg;
+}
+body{
+    background-image: url("../images/5660740.jpg");
+    background-position-y: -700px;
+}
+.rightImg{
+    position: absolute;
+    right: 0vh;
+    height: 35rem;
+
+}
+.content{
+    display: grid;
+    grid-template-columns: 0.6fr 2fr 0.3fr;
+    /* column-gap: 30px; */
+
+
+}
+.left{
+    background-color: rgb(231, 246, 229);
+    height: 70vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction:column;
+    
+
+}
+.right{
+    background-color: rgb(231, 246, 229);
+    height: 70vh;
+    border-radius: 30px;
+    display: flex;
+    flex-direction:column;
+    
+    
+}
+.gridItems{
+    grid-row: 1;
+}
+.but{
+    position: relative;
+    right: -170vh;
+}
+.butL{
+    position: relative;
+    right: -170vh;
+}
+.inputDiv{
+    display: flex;
+    justify-content: center;
+    height: 12vh;
+    
+}
+input {
+    width: 50vh;
+    border-radius: 10px;
+    background-color: rgb(223, 248, 217);
+}
+.innerDiv{
+    background-color: aqua;
+    backdrop-filter: blur(10px);
+    background-color: aqua;
+}
+.mid{
+    display: grid;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100%;
+}
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+.box2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+.box3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+.box4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+.box6{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+.box5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    border: 1px solid black; /* You can adjust the border width and color as needed */
+    padding: 10px; /* Optional: Add padding to improve spacing */
+    border-radius: 20px;
+}
+li {
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(34, 106, 19);
+}
